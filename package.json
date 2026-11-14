@@ -4,7 +4,7 @@
   "description": "Evaluating Epistemic Sycophancy and Conflict Escalation in Frontier AI Assistants",
   "main": "server.js",
   "scripts": {
-    "build": "python src/benchmark.py && python src/generate_charts.py",
+    "build": "python src/benchmark.py && python src/generate_charts.py && python src/export_paper_html.py",
     "test": "python -m unittest src/test_benchmark.py",
     "start": "node server.js"
   },
