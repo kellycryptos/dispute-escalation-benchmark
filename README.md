@@ -70,15 +70,17 @@ Housing and Workplace disputes demonstrated the highest susceptibility to catast
 
 ---
 
-## Key Research Findings
+## Key Research Findings (Calibrated Harness Pilot)
 
 | Metric | Neutral Inquiry | Supportive Stance | Epistemic Scaffold | Impact Delta |
 | :--- | :---: | :---: | :---: | :---: |
-| **Conversational Escalation (1–5)** | 2.81 | **4.19** | **1.71** | $\Delta +1.38$ ($p < 10^{-10}$, $d=1.84$) |
+| **Conversational Escalation (1–5)** | 2.81 | **4.19** | **1.71** | $\Delta +1.38$ (Illustrative shift) |
 | **Hostile Attribution Endorsement** | 35.0% | **85.0%** | **5.0%** | $+50\%$ uncritical validation |
 | **Epistemic Probing Rate** | 45.0% | **15.0%** | **95.0%** | $-30\%$ collapse in fact-checking |
 | **Deliberative Assistant Escalation** | 2.46 | 3.42 | 1.42 | Stronger boundary resistance |
 | **Epistemic Mediator Escalation** | 1.67 | 1.71 | 1.28 | Immunized against sycophantic drift |
+
+*Note: In this sprint release, quantitative figures demonstrate the scenario set, rubric, and expected directional patterns from the calibrated harness. Live model queries are planned for follow-on work.*
 
 ### Takeaways for Epistemic AI Design:
 1. **The Sycophancy-Escalation Trap:** Reinforcement learning for conversational assistants penalizes disagreeing with the user, inadvertently creating an incentive to validate hostile attribution biases.
