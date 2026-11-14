@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="760" height="420" fill="#ffffff" rx="8" />
+<text x="90" y="32" font-size="17" font-weight="700" fill="#111827">Figure 1: Mean Escalation Index by Model Paradigm & Stance</text>
+<text x="90" y="48" font-size="12" fill="#6B7280">1 = De-escalation & Inquiry | 3 = Defensive Posturing | 5 = Scorched Earth Retaliation</text>
+<line x1="90" y1="340.0" x2="720" y2="340.0" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3" />
+<text x="78" y="344.0" font-size="12" fill="#6B7280" text-anchor="end">1.0</text>
+<line x1="90" y1="270.0" x2="720" y2="270.0" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3" />
+<text x="78" y="274.0" font-size="12" fill="#6B7280" text-anchor="end">2.0</text>
+<line x1="90" y1="200.0" x2="720" y2="200.0" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3" />
+<text x="78" y="204.0" font-size="12" fill="#6B7280" text-anchor="end">3.0</text>
+<line x1="90" y1="130.0" x2="720" y2="130.0" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3" />
+<text x="78" y="134.0" font-size="12" fill="#6B7280" text-anchor="end">4.0</text>
+<line x1="90" y1="60.0" x2="720" y2="60.0" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3" />
+<text x="78" y="64.0" font-size="12" fill="#6B7280" text-anchor="end">5.0</text>
+<line x1="90" y1="340.0" x2="720" y2="340.0" stroke="#9CA3AF" stroke-width="1.5" />
+<rect x="118.0" y="213.29999999999998" width="42" height="126.70000000000002" fill="#4A90E2" rx="3" opacity="0.9" />
+<text x="139.0" y="201.29999999999998" font-size="11" font-weight="600" fill="#374151" text-anchor="middle">2.81</text>
+<line x1="139.0" y1="205.6" x2="139.0" y2="221.0" stroke="#1F2937" stroke-width="1.5" />
+<line x1="135.0" y1="205.6" x2="143.0" y2="205.6" stroke="#1F2937" stroke-width="1.5" />
+<line x1="135.0" y1="221.0" x2="143.0" y2="221.0" stroke="#1F2937" stroke-width="1.5" />
+<rect x="174.0" y="116.69999999999997" width="42" height="223.3" fill="#E74C3C" rx="3" opacity="0.9" />
+<text x="195.0" y="104.69999999999997" font-size="11" font-weight="600" fill="#374151" text-anchor="middle">4.19</text>
+<line x1="195.0" y1="110.39999999999998" x2="195.0" y2="122.99999999999997" stroke="#1F2937" stroke-width="1.5" />
+<line x1="191.0" y1="110.39999999999998" x2="199.0" y2="110.39999999999998" stroke="#1F2937" stroke-width="1.5" />
+<line x1="191.0" y1="122.99999999999997" x2="199.0" y2="122.99999999999997" stroke="#1F2937" stroke-width="1.5" />
+<rect x="230.0" y="283.29999999999995" width="42" height="56.700000000000045" fill="#2ECC71" rx="3" opacity="0.9" />
+<text x="251.0" y="271.29999999999995" font-size="11" font-weight="600" fill="#374151" text-anchor="middle">1.81</text>
+<line x1="251.0" y1="277.0" x2="251.0" y2="289.6" stroke="#1F2937" stroke-width="1.5" />
+<line x1="247.0" y1="277.0" x2="255.0" y2="277.0" stroke="#1F2937" stroke-width="1.5" />
+<line x1="247.0" y1="289.6" x2="255.0" y2="289.6" stroke="#1F2937" stroke-width="1.5" />
+<text x="195.0" y="364" font-size="13" font-weight="600" fill="#1F2937" text-anchor="middle">Conversational Assistant</text>
+<rect x="328.0" y="243.4" width="42" height="96.6" fill="#4A90E2" rx="3" opacity="0.9" />
+<text x="349.0" y="231.4" font-size="11" font-weight="600" fill="#374151" text-anchor="middle">2.38</text>
+<line x1="349.0" y1="235.70000000000002" x2="349.0" y2="251.1" stroke="#1F2937" stroke-width="1.5" />
+<line x1="345.0" y1="235.70000000000002" x2="353.0" y2="235.70000000000002" stroke="#1F2937" stroke-width="1.5" />
+<line x1="345.0" y1="251.1" x2="353.0" y2="251.1" stroke="#1F2937" stroke-width="1.5" />
+<rect x="384.0" y="170.60000000000002" width="42" height="169.39999999999998" fill="#E74C3C" rx="3" opacity="0.9" />
+<text x="405.0" y="158.60000000000002" font-size="11" font-weight="600" fill="#374151" text-anchor="middle">3.42</text>
+<line x1="405.0" y1="162.90000000000003" x2="405.0" y2="178.3" stroke="#1F2937" stroke-width="1.5" />
+<line x1="401.0" y1="162.90000000000003" x2="409.0" y2="162.90000000000003" stroke="#1F2937" stroke-width="1.5" />
+<line x1="401.0" y1="178.3" x2="409.0" y2="178.3" stroke="#1F2937" stroke-width="1.5" />
+<rect x="440.0" y="307.8" width="42" height="32.19999999999999" fill="#2ECC71" rx="3" opacity="0.9" />
+<text x="461.0" y="295.8" font-size="11" font-weight="600" fill="#374151" text-anchor="middle">1.46</text>
+<line x1="461.0" y1="300.79999999999995" x2="461.0" y2="314.8" stroke="#1F2937" stroke-width="1.5" />
+<line x1="457.0" y1="300.79999999999995" x2="465.0" y2="300.79999999999995" stroke="#1F2937" stroke-width="1.5" />
+<line x1="457.0" y1="314.8" x2="465.0" y2="314.8" stroke="#1F2937" stroke-width="1.5" />
+<text x="405.0" y="364" font-size="13" font-weight="600" fill="#1F2937" text-anchor="middle">Deliberative Assistant</text>
+<rect x="538.0" y="302.9" width="42" height="37.10000000000002" fill="#4A90E2" rx="3" opacity="0.9" />
+<text x="559.0" y="290.9" font-size="11" font-weight="600" fill="#374151" text-anchor="middle">1.53</text>
+<line x1="559.0" y1="296.6" x2="559.0" y2="309.20000000000005" stroke="#1F2937" stroke-width="1.5" />
+<line x1="555.0" y1="296.6" x2="563.0" y2="296.6" stroke="#1F2937" stroke-width="1.5" />
+<line x1="555.0" y1="309.20000000000005" x2="563.0" y2="309.20000000000005" stroke="#1F2937" stroke-width="1.5" />
+<rect x="594.0" y="283.29999999999995" width="42" height="56.700000000000045" fill="#E74C3C" rx="3" opacity="0.9" />
+<text x="615.0" y="271.29999999999995" font-size="11" font-weight="600" fill="#374151" text-anchor="middle">1.81</text>
+<line x1="615.0" y1="276.29999999999995" x2="615.0" y2="290.3" stroke="#1F2937" stroke-width="1.5" />
+<line x1="611.0" y1="276.29999999999995" x2="619.0" y2="276.29999999999995" stroke="#1F2937" stroke-width="1.5" />
+<line x1="611.0" y1="290.3" x2="619.0" y2="290.3" stroke="#1F2937" stroke-width="1.5" />
+<rect x="650.0" y="323.9" width="42" height="16.100000000000023" fill="#2ECC71" rx="3" opacity="0.9" />
+<text x="671.0" y="311.9" font-size="11" font-weight="600" fill="#374151" text-anchor="middle">1.23</text>
+<line x1="671.0" y1="316.2" x2="671.0" y2="331.59999999999997" stroke="#1F2937" stroke-width="1.5" />
+<line x1="667.0" y1="316.2" x2="675.0" y2="316.2" stroke="#1F2937" stroke-width="1.5" />
+<line x1="667.0" y1="331.59999999999997" x2="675.0" y2="331.59999999999997" stroke="#1F2937" stroke-width="1.5" />
+<text x="615.0" y="364" font-size="13" font-weight="600" fill="#1F2937" text-anchor="middle">Epistemic Mediator</text>
+<rect x="90" y="388" width="14" height="14" fill="#4A90E2" rx="2" />
+<text x="110" y="400" font-size="12" fill="#374151">Neutral Inquiry</text>
+<rect x="310" y="388" width="14" height="14" fill="#E74C3C" rx="2" />
+<text x="330" y="400" font-size="12" fill="#374151">Hostile Sycophancy Probe</text>
+<rect x="560" y="388" width="14" height="14" fill="#2ECC71" rx="2" />
+<text x="580" y="400" font-size="12" fill="#374151">Epistemic Scaffold</text>
+</svg>

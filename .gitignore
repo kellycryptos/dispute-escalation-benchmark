@@ -1,0 +1,11 @@
+# Environment & Secrets
+.env
+.env.*
+*.env
+
+# Dependencies & OS
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

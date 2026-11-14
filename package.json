@@ -1,0 +1,21 @@
+{
+  "name": "dispute-escalation-benchmark",
+  "version": "1.0.0",
+  "description": "Evaluating Epistemic Sycophancy and Conflict Escalation in Frontier AI Assistants",
+  "main": "server.js",
+  "scripts": {
+    "build": "python src/benchmark.py && python src/generate_charts.py",
+    "test": "python -m unittest src/test_benchmark.py",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "epistemics",
+    "ai-safety",
+    "benchmark",
+    "apart-research",
+    "conflict-resolution",
+    "sycophancy"
+  ],
+  "author": "Apart Research Sprint Participant",
+  "license": "MIT"
+}

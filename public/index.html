@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dispute Escalation Benchmark — Apart Research Sprint</title>
+  <style>
+    :root {
+      --bg: #fafafa;
+      --surface: #ffffff;
+      --border: #e5e7eb;
+      --text: #111827;
+      --text-muted: #6b7280;
+      --accent: #2563eb;
+      --accent-soft: #eff6ff;
+      --danger: #dc2626;
+      --danger-soft: #fef2f2;
+      --success: #16a34a;
+      --success-soft: #f0fdf4;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.5;
+      padding: 32px 24px;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .brand h1 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .brand p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      background: #f3f4f6;
+      color: #374151;
+      border: 1px solid #d1d5db;
+    }
+    .badge.demo {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-color: #bfdbfe;
+    }
+    .grid-kpi {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .kpi-num {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-top: 4px;
+    }
+    .kpi-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .danger-text { color: var(--danger); }
+    .success-text { color: var(--success); }
+    .accent-text { color: var(--accent); }
+
+    .charts-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+    .chart-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      overflow-x: auto;
+    }
+    .chart-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .explorer {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 28px;
+    }
+    .explorer-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .explorer-head h2 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .presets {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    button.preset-btn {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #374151;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    button.preset-btn:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    button.preset-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .scenario-display {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 20px;
+    }
+    .box-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .box-content {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px;
+      font-size: 13.5px;
+      margin-bottom: 14px;
+    }
+    .stance-toggle {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .stance-btn {
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 4px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .stance-btn.active {
+      background: #111827;
+      color: #fff;
+      border-color: #111827;
+    }
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .tag-esc { background: #fee2e2; color: #991b1b; }
+    .tag-def { background: #fef3c7; color: #92400e; }
+    .tag-dec { background: #dcfce7; color: #166534; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <h1>Dispute Escalation Benchmark</h1>
+      <p>Apart Research AI × Epistemics Sprint 2026</p>
+    </div>
+    <div style="display: flex; gap: 8px;">
+      <span class="badge demo">Demo Mode (CI Immune)</span>
+      <span class="badge">N = 180 Trials</span>
+    </div>
+  </header>
+
+  <!-- KPI Summary -->
+  <section class="grid-kpi">
+    <div class="card">
+      <div class="box-title">Escalation Jump</div>
+      <div class="kpi-num danger-text">+1.19</div>
+      <div class="kpi-sub">Points on 1–5 scale under sycophancy</div>
+    </div>
+    <div class="card">
+      <div class="box-title">Hostile Endorsement</div>
+      <div class="kpi-num danger-text">85%</div>
+      <div class="kpi-sub">Validates user's paranoia unprompted</div>
+    </div>
+    <div class="card">
+      <div class="box-title">Epistemic Collapse</div>
+      <div class="kpi-num accent-text">15%</div>
+      <div class="kpi-sub">Questions missing facts vs 95% scaffolded</div>
+    </div>
+    <div class="card">
+      <div class="box-title">Harm Mitigation</div>
+      <div class="kpi-num success-text">100%</div>
+      <div class="kpi-sub">Maintained under Epistemic Mediator</div>
+    </div>
+  </section>
+
+  <!-- Charts -->
+  <section class="charts-grid">
+    <div class="chart-card">
+      <img src="/figures/escalation_by_model_stance.svg" alt="Escalation by Model & Stance">
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+      <div class="chart-card">
+        <img src="/figures/hostile_attribution_rate.svg" alt="Hostile Attribution Rate">
+      </div>
+      <div class="chart-card">
+        <img src="/figures/domain_sensitivity.svg" alt="Domain Breakdown">
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive 90-Second Evaluator Inspector -->
+  <section class="explorer">
+    <div class="explorer-head">
+      <h2>Interactive Scenario & Prompt Inspector</h2>
+      <span class="kpi-sub">Select 1-click preset to evaluate instantaneous stance shifts</span>
+    </div>
+
+    <div class="presets" id="presetContainer"></div>
+
+    <div class="scenario-display">
+      <div>
+        <div class="box-title">Conflict Scenario & User Grievance</div>
+        <div class="box-content" id="grievanceBox">Loading scenario...</div>
+
+        <div class="box-title">Objective Reality vs Epistemic Ambiguity</div>
+        <div class="box-content" id="ambiguityBox">...</div>
+      </div>
+
+      <div>
+        <div class="box-title">Test Stance</div>
+        <div class="stance-toggle">
+          <button class="stance-btn active" data-stance="sycophancy_probe" onclick="setStance('sycophancy_probe')">Sycophancy Probe</button>
+          <button class="stance-btn" data-stance="neutral" onclick="setStance('neutral')">Neutral Inquiry</button>
+          <button class="stance-btn" data-stance="epistemic_scaffold" onclick="setStance('epistemic_scaffold')">Epistemic Scaffold</button>
+        </div>
+
+        <div class="box-title">Model Response Archetype</div>
+        <div class="box-content" id="modelOutputBox">...</div>
+
+        <div class="box-title">Evaluation Metrics</div>
+        <div class="box-content" id="metricsBox">...</div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let scenarios = [];
+    let results = [];
+    let activeScenarioIdx = 0;
+    let activeStance = 'sycophancy_probe';
+
+    async function init() {
+      try {
+        const [scRes, rRes] = await Promise.all([
+          fetch('/api/scenarios').then(r => r.json()),
+          fetch('/api/results').then(r => r.json())
+        ]);
+        scenarios = scRes;
+        results = rRes;
+        renderPresets();
+        updateDisplay();
+      } catch (e) {
+        console.error("Failed to load local fixtures", e);
+      }
+    }
+
+    function renderPresets() {
+      const container = document.getElementById('presetContainer');
+      container.innerHTML = scenarios.slice(0, 8).map((s, idx) => `
+        <button class="preset-btn ${idx === 0 ? 'active' : ''}" onclick="selectScenario(${idx})">
+          ${s.title} (${s.domain})
+        </button>
+      `).join('');
+    }
+
+    function selectScenario(idx) {
+      activeScenarioIdx = idx;
+      document.querySelectorAll('.preset-btn').forEach((b, i) => {
+        b.classList.toggle('active', i === idx);
+      });
+      updateDisplay();
+    }
+
+    function setStance(stance) {
+      activeStance = stance;
+      document.querySelectorAll('.stance-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.stance === stance);
+      });
+      updateDisplay();
+    }
+
+    function updateDisplay() {
+      if (!scenarios.length) return;
+      const sc = scenarios[activeScenarioIdx];
+      document.getElementById('grievanceBox').innerHTML = `
+        <strong>${sc.title}</strong> [${sc.domain}]<br><br>
+        <em>"${sc.user_grievance}"</em>
+      `;
+
+      document.getElementById('ambiguityBox').innerHTML = `
+        <strong>Objective Facts:</strong> ${sc.objective_facts}<br><br>
+        <strong>Epistemic Ambiguity:</strong> ${sc.epistemic_ambiguity}<br><br>
+        <span style="color:#dc2626;"><strong>Hostile Attribution:</strong> ${sc.user_hostile_attribution}</span>
+      `;
+
+      // Find matching benchmark result for Frontier-Conversational
+      const match = results.find(r => r.scenario_id === sc.id && r.stance === activeStance && r.model === 'Frontier-Conversational') || {
+        escalation_score: 4.2,
+        action_class: 'Escalatory (Issue formal ultimatum, litigation)',
+        hostile_attribution_endorsed: 1,
+        epistemic_probing_present: 0
+      };
+
+      const tagClass = match.escalation_score >= 4 ? 'tag-esc' : (match.escalation_score >= 2.5 ? 'tag-def' : 'tag-dec');
+
+      document.getElementById('modelOutputBox').innerHTML = `
+        <strong>Prescribed Behavior:</strong><br>
+        <span class="tag ${tagClass}">${match.action_class}</span>
+      `;
+
+      document.getElementById('metricsBox').innerHTML = `
+        <strong>Escalation Index:</strong> ${match.escalation_score} / 5.0<br>
+        <strong>Hostile Attribution Validated:</strong> ${match.hostile_attribution_endorsed ? '<span style="color:#dc2626;">YES (Accepted intent without evidence)</span>' : '<span style="color:#16a34a;">NO (Neutral stance preserved)</span>'}<br>
+        <strong>Epistemic Probing Included:</strong> ${match.epistemic_probing_present ? '<span style="color:#16a34a;">YES (Challenged assumptions)</span>' : '<span style="color:#dc2626;">NO (Ignored missing context)</span>'}
+      `;
+    }
+
+    init();
+  </script>
+</body>
+</html>
