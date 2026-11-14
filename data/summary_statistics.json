@@ -1,148 +1,148 @@
 {
   "by_model_stance": {
     "Epistemic-Mediator": {
-      "epistemic_scaffold": {
+      "de_escalation": {
         "n": 20,
-        "mean_escalation": 1.23,
-        "std_escalation": 0.24,
-        "ci95_escalation": 0.11,
+        "mean_escalation": 1.28,
+        "std_escalation": 0.2,
+        "ci95_escalation": 0.09,
         "hostile_attribution_rate": 0.0,
         "epistemic_probing_rate": 1.0,
         "mitigation_warning_rate": 1.0
       },
       "neutral": {
         "n": 20,
-        "mean_escalation": 1.53,
-        "std_escalation": 0.2,
-        "ci95_escalation": 0.09,
-        "hostile_attribution_rate": 0.0,
-        "epistemic_probing_rate": 0.85,
-        "mitigation_warning_rate": 0.85
-      },
-      "sycophancy_probe": {
-        "n": 20,
-        "mean_escalation": 1.81,
+        "mean_escalation": 1.67,
         "std_escalation": 0.23,
         "ci95_escalation": 0.1,
-        "hostile_attribution_rate": 0.1,
-        "epistemic_probing_rate": 0.8,
+        "hostile_attribution_rate": 0.15,
+        "epistemic_probing_rate": 0.9,
+        "mitigation_warning_rate": 1.0
+      },
+      "supportive": {
+        "n": 20,
+        "mean_escalation": 1.71,
+        "std_escalation": 0.26,
+        "ci95_escalation": 0.11,
+        "hostile_attribution_rate": 0.0,
+        "epistemic_probing_rate": 0.9,
         "mitigation_warning_rate": 1.0
       }
     },
     "Frontier-Conversational": {
-      "epistemic_scaffold": {
+      "de_escalation": {
         "n": 20,
-        "mean_escalation": 1.81,
-        "std_escalation": 0.2,
-        "ci95_escalation": 0.09,
-        "hostile_attribution_rate": 0.15,
-        "epistemic_probing_rate": 1.0,
+        "mean_escalation": 1.71,
+        "std_escalation": 0.22,
+        "ci95_escalation": 0.1,
+        "hostile_attribution_rate": 0.05,
+        "epistemic_probing_rate": 0.9,
         "mitigation_warning_rate": 0.9
       },
       "neutral": {
         "n": 20,
-        "mean_escalation": 2.81,
-        "std_escalation": 0.25,
-        "ci95_escalation": 0.11,
-        "hostile_attribution_rate": 0.35,
-        "epistemic_probing_rate": 0.5,
-        "mitigation_warning_rate": 0.75
+        "mean_escalation": 2.87,
+        "std_escalation": 0.22,
+        "ci95_escalation": 0.1,
+        "hostile_attribution_rate": 0.3,
+        "epistemic_probing_rate": 0.45,
+        "mitigation_warning_rate": 0.85
       },
-      "sycophancy_probe": {
+      "supportive": {
         "n": 20,
-        "mean_escalation": 4.19,
-        "std_escalation": 0.21,
-        "ci95_escalation": 0.09,
-        "hostile_attribution_rate": 0.75,
-        "epistemic_probing_rate": 0.25,
-        "mitigation_warning_rate": 0.45
+        "mean_escalation": 4.15,
+        "std_escalation": 0.28,
+        "ci95_escalation": 0.12,
+        "hostile_attribution_rate": 0.7,
+        "epistemic_probing_rate": 0.05,
+        "mitigation_warning_rate": 0.5
       }
     },
     "Frontier-Deliberative": {
-      "epistemic_scaffold": {
+      "de_escalation": {
         "n": 20,
-        "mean_escalation": 1.46,
-        "std_escalation": 0.23,
-        "ci95_escalation": 0.1,
+        "mean_escalation": 1.42,
+        "std_escalation": 0.19,
+        "ci95_escalation": 0.08,
         "hostile_attribution_rate": 0.0,
         "epistemic_probing_rate": 1.0,
         "mitigation_warning_rate": 1.0
       },
       "neutral": {
         "n": 20,
-        "mean_escalation": 2.38,
-        "std_escalation": 0.25,
-        "ci95_escalation": 0.11,
+        "mean_escalation": 2.46,
+        "std_escalation": 0.23,
+        "ci95_escalation": 0.1,
         "hostile_attribution_rate": 0.2,
-        "epistemic_probing_rate": 0.55,
-        "mitigation_warning_rate": 0.85
+        "epistemic_probing_rate": 0.6,
+        "mitigation_warning_rate": 0.95
       },
-      "sycophancy_probe": {
+      "supportive": {
         "n": 20,
         "mean_escalation": 3.42,
         "std_escalation": 0.24,
-        "ci95_escalation": 0.11,
-        "hostile_attribution_rate": 0.6,
-        "epistemic_probing_rate": 0.2,
-        "mitigation_warning_rate": 0.45
+        "ci95_escalation": 0.1,
+        "hostile_attribution_rate": 0.45,
+        "epistemic_probing_rate": 0.35,
+        "mitigation_warning_rate": 0.6
       }
     }
   },
   "by_domain": {
     "Consumer & Contracts": {
-      "epistemic_scaffold": {
+      "de_escalation": {
         "n": 15,
-        "mean_escalation": 1.47
+        "mean_escalation": 1.54
       },
       "neutral": {
         "n": 15,
-        "mean_escalation": 2.17
+        "mean_escalation": 2.41
       },
-      "sycophancy_probe": {
+      "supportive": {
         "n": 15,
-        "mean_escalation": 3.09
+        "mean_escalation": 3.13
       }
     },
     "Housing": {
-      "epistemic_scaffold": {
+      "de_escalation": {
         "n": 15,
-        "mean_escalation": 1.44
+        "mean_escalation": 1.51
       },
       "neutral": {
         "n": 15,
-        "mean_escalation": 2.29
+        "mean_escalation": 2.24
       },
-      "sycophancy_probe": {
+      "supportive": {
         "n": 15,
-        "mean_escalation": 3.19
+        "mean_escalation": 3.1
       }
     },
     "Interpersonal": {
-      "epistemic_scaffold": {
+      "de_escalation": {
         "n": 15,
-        "mean_escalation": 1.61
+        "mean_escalation": 1.48
       },
       "neutral": {
         "n": 15,
-        "mean_escalation": 2.25
+        "mean_escalation": 2.37
       },
-      "sycophancy_probe": {
+      "supportive": {
         "n": 15,
-        "mean_escalation": 3.19
+        "mean_escalation": 3.04
       }
     },
     "Workplace": {
-      "epistemic_scaffold": {
+      "de_escalation": {
         "n": 15,
-        "mean_escalation": 1.47
+        "mean_escalation": 1.34
       },
       "neutral": {
         "n": 15,
-        "mean_escalation": 2.25
+        "mean_escalation": 2.31
       },
-      "sycophancy_probe": {
+      "supportive": {
         "n": 15,
-        "mean_escalation": 3.07
+        "mean_escalation": 3.11
       }
     }
   }

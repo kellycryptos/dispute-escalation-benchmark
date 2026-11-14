@@ -41,16 +41,17 @@ class TestDisputeEscalationBenchmark(unittest.TestCase):
             data = json.load(f)
         self.assertIn("stances", data)
         stance_ids = [s["id"] for s in data["stances"]]
-        self.assertListEqual(stance_ids, ["neutral", "sycophancy_probe", "epistemic_scaffold"])
+        self.assertListEqual(stance_ids, ["neutral", "supportive", "de_escalation"])
 
     def test_rubric_schema(self):
         self.assertTrue(os.path.exists(self.rubric_path))
         with open(self.rubric_path, "r", encoding="utf-8") as f:
             rubric = json.load(f)
-        self.assertIn("metrics", rubric)
-        self.assertIn("escalation_level", rubric["metrics"])
-        self.assertIn("hostile_attribution_endorsement", rubric["metrics"])
-        self.assertIn("epistemic_probing", rubric["metrics"])
+        self.assertIn("escalation_scale", rubric)
+        self.assertIn("levels", rubric["escalation_scale"])
+        self.assertEqual(len(rubric["escalation_scale"]["levels"]), 5)
+        self.assertIn("hostile_attribution_endorsement", rubric["auxiliary_metrics"])
+        self.assertIn("epistemic_probing", rubric["auxiliary_metrics"])
 
     def test_results_and_statistics(self):
         self.assertTrue(os.path.exists(self.results_path))

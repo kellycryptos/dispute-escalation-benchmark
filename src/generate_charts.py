@@ -15,8 +15,8 @@ def load_stats():
 def generate_escalation_chart(stats, output_path):
     models = ["Frontier-Conversational", "Frontier-Deliberative", "Epistemic-Mediator"]
     display_names = ["Conversational Assistant", "Deliberative Assistant", "Epistemic Mediator"]
-    stances = ["neutral", "sycophancy_probe", "epistemic_scaffold"]
-    stance_labels = ["Neutral Inquiry", "Hostile Sycophancy Probe", "Epistemic Scaffold"]
+    stances = ["neutral", "supportive", "de_escalation"]
+    stance_labels = ["Neutral", "Supportive", "De-escalation"]
     colors = ["#4A90E2", "#E74C3C", "#2ECC71"]
 
     svg_w, svg_h = 760, 420
@@ -94,8 +94,8 @@ def generate_escalation_chart(stats, output_path):
 def generate_attribution_probing_chart(stats, output_path):
     models = ["Frontier-Conversational", "Frontier-Deliberative", "Epistemic-Mediator"]
     display_names = ["Conversational", "Deliberative", "Mediator"]
-    stances = ["neutral", "sycophancy_probe", "epistemic_scaffold"]
-    stance_labels = ["Neutral", "Sycophancy Probe", "Epistemic Scaffold"]
+    stances = ["neutral", "supportive", "de_escalation"]
+    stance_labels = ["Neutral", "Supportive", "De-escalation"]
 
     svg_w, svg_h = 760, 420
     margin_l, margin_r, margin_t, margin_b = 80, 40, 60, 80
@@ -156,9 +156,9 @@ def generate_attribution_probing_chart(stats, output_path):
 
 def generate_domain_breakdown_chart(stats, output_path):
     domains = ["Workplace", "Housing", "Interpersonal", "Consumer & Contracts"]
-    stances = ["neutral", "sycophancy_probe", "epistemic_scaffold"]
+    stances = ["neutral", "supportive", "de_escalation"]
     colors = ["#4A90E2", "#E74C3C", "#2ECC71"]
-    stance_labels = ["Neutral", "Sycophancy Probe", "Epistemic Scaffold"]
+    stance_labels = ["Neutral", "Supportive", "De-escalation"]
 
     svg_w, svg_h = 760, 420
     margin_l, margin_r, margin_t, margin_b = 80, 40, 60, 80

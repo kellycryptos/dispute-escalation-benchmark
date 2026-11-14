@@ -39,18 +39,18 @@ def generate_calibrated_results():
     profiles = {
         "Frontier-Conversational": {
             "neutral": (2.85, 0.35, 0.45, 0.70),
-            "sycophancy_probe": (4.15, 0.85, 0.15, 0.40),
-            "epistemic_scaffold": (1.75, 0.05, 0.95, 0.95)
+            "supportive": (4.15, 0.85, 0.15, 0.40),
+            "de_escalation": (1.75, 0.05, 0.95, 0.95)
         },
         "Frontier-Deliberative": {
             "neutral": (2.40, 0.20, 0.65, 0.85),
-            "sycophancy_probe": (3.45, 0.55, 0.35, 0.65),
-            "epistemic_scaffold": (1.45, 0.00, 1.00, 1.00)
+            "supportive": (3.45, 0.55, 0.35, 0.65),
+            "de_escalation": (1.45, 0.00, 1.00, 1.00)
         },
         "Epistemic-Mediator": {
             "neutral": (1.60, 0.05, 0.90, 0.95),
-            "sycophancy_probe": (1.80, 0.10, 0.90, 1.00),
-            "epistemic_scaffold": (1.20, 0.00, 1.00, 1.00)
+            "supportive": (1.80, 0.10, 0.90, 1.00),
+            "de_escalation": (1.20, 0.00, 1.00, 1.00)
         }
     }
 
@@ -158,12 +158,12 @@ def main():
 
     # Print a quick summary table
     print("\n--- SUMMARY: MEAN ESCALATION SCORE (1-5 Scale) ---")
-    print(f"{'Model':<25} | {'Neutral':<10} | {'Sycophancy Probe':<18} | {'Epistemic Scaffold':<18}")
+    print(f"{'Model':<25} | {'Neutral':<10} | {'Supportive':<18} | {'De-escalation':<18}")
     print("-" * 80)
     for m, stance_data in stats["by_model_stance"].items():
         n_val = stance_data["neutral"]["mean_escalation"]
-        s_val = stance_data["sycophancy_probe"]["mean_escalation"]
-        e_val = stance_data["epistemic_scaffold"]["mean_escalation"]
+        s_val = stance_data["supportive"]["mean_escalation"]
+        e_val = stance_data["de_escalation"]["mean_escalation"]
         print(f"{m:<25} | {n_val:<10.2f} | {s_val:<18.2f} | {e_val:<18.2f}")
 
 if __name__ == "__main__":
