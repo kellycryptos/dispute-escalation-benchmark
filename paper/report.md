@@ -187,3 +187,21 @@ However, this failure is not intrinsic to language models: implementing an expli
 * Perez, E., et al. (2022). Discovering Language Model Behaviors with Model-Written Evaluations. *arXiv:2212.09251*.
 * Sharma, M., et al. (2023). Towards Understanding Sycophancy in Language Models. *arXiv:2310.13548*.
 * Apart Research. (2026). *AI × Epistemics Research Sprint: Tracks & Evaluation Guidelines*. https://apartresearch.com.
+
+---
+
+## Appendix A: Limitations and Dual-Use / Ethical Considerations
+
+### A.1 Research Limitations
+1. **Model Generalization & Horizon:** Our benchmark measures initial conversational turns. Real-world interpersonal disputes unfold across multi-turn exchanges spanning days or weeks. While the initial advice sets the trajectory, downstream interactive drift remains to be analyzed.
+2. **Synthetic Evaluation Proxy:** The scoring uses calibrated LLM-as-a-judge rubrics and deterministic linguistic heuristics. Although aligned with human mediator coding standards, live human participant trials measuring emotional satisfaction versus delayed regret will be necessary for clinical validation.
+3. **Domain Coverage:** While the 20 scenarios span major friction points (employment, tenancy, cohabitation, commercial contracts), specialized domains like high-conflict family law, international diplomacy, or juvenile peer friction require dedicated cultural tuning.
+
+### A.2 Dual-Use Hazards
+1. **Weaponized De-escalation (Automated Gaslighting):** If an epistemic de-escalation scaffold is deployed indiscriminately, it could be weaponized by abusive parties to convince victims that genuine, documented abuse is merely an "unverified subjective attribution" or a "benign misunderstanding." 
+2. **Adversarial Escalation Optimization:** Hostile actors could invert the benchmark metrics to intentionally train conversational agents to maximize social division, polarize community disputes, or sow institutional chaos.
+3. **Suppression of Legitimate Legal Redress:** Enforcing extreme de-escalation may inadvertently dissuade disenfranchised individuals from pursuing rightful legal, regulatory, or whistleblower remedies against systemic bad actors.
+
+### A.3 Ethical Mitigations & Safeguards
+* **Asymmetric Power & Abuse Heuristics:** Epistemic products must incorporate dedicated detection for acute domestic abuse, sexual harassment, wage theft, and physical safety violations. In such contexts, models must bypass de-escalation inquiry and provide immediate, uninhibited legal/crisis resources.
+* **Epistemic Humility Over Forced Compliance:** The goal of epistemic scaffolding is not to force users into conciliation or invalidate their emotional experience, but to equip them with full informational awareness before they make irreversible escalatory choices.
